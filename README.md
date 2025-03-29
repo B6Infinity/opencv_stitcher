@@ -1,21 +1,37 @@
 # stitcher
 
-A new Flutter project.
+A boilerplate Flutter project that utilizes the [`opencv_core`](https://pub.dev/packages/opencv_dart) dart package.
 
-## Getting Started
+## How to Use the App
 
-This project is a starting point for a Flutter application.
+### Prerequisites
+1. Ensure you have Flutter installed on your system. Follow the [Flutter installation guide](https://flutter.dev/docs/get-started/install) if needed.
+2. Install the required dependencies by running:
+    ```bash
+    flutter pub get
+    ```
 
-A few resources to get you started if this is your first Flutter project:
+### Running the App
+1. Connect a physical device or start an emulator.
+2. Run the app using:
+    ```bash
+    flutter run
+    ```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### How It Works
+1. The app allows you to upload multiple images for stitching.
+2. Images are processed using the `opencv_core` package, which handles image manipulation and stitching.
+3. The stitched image is displayed on the app using the `Image.memory` widget.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Features
+- Upload multiple images.
+- Automatically stitch images into a single panoramic view.
+- Save the stitched image locally.
 
-
+### Notes
+- Ensure the images have overlapping regions for better stitching results.
+- The app uses OpenCV's image stitching algorithms for high-quality output.
+- Refer to the [opencv_core documentation](https://pub.dev/packages/opencv_dart) for more details on the underlying library.
 ## NOTEs for the dev
 
 Here's a brief overview of how the flutter opencv image situation works with the `opencv_core` package installed.
